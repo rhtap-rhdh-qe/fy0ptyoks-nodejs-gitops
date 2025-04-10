@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: fy0ptyoks-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: fy0ptyoks-nodejs 
+  name: fy0ptyoks-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: fy0ptyoks-nodejs 
